@@ -152,9 +152,9 @@
             var width = window.screen.availWidth
 
             // if it's less than a third, unstick
-            if( $(window).width() < (width/3) ){
+            if( $(window).width() < (width/2) ){
                 $('#sticker').unstick();
-            } else if($(window).width() > (width/3)){
+            } else if($(window).width() > (width/2)){
                 $("#sticker").sticky({ topSpacing: 50, bottomSpacing: 1175 });
             }
         }
