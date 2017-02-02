@@ -143,21 +143,19 @@
     <script type="text/javascript" src= "main.js"></script>
     <script>
     $(document).ready(function(){
-        // stick it
-        $("#sticker").sticky({ topSpacing: 50, bottomSpacing: 1175 });
-
-      // fire an event every time the window resizes to see if we need to unstick
-        window.onresize = function(){
-            // set the available fullsize width
-            var width = window.screen.availWidth
-
-            // if it's less than a third, unstick
-            if( $(window).width() < (width/2) ){
-                $('#sticker').unstick();
-            } else if($(window).width() > (width/2)){
-                $("#sticker").sticky({ topSpacing: 50, bottomSpacing: 1175 });
-            }
-        }
+      // stick it
+       $("#sticker").sticky({ topSpacing: 50, bottomSpacing: 1175 });
+     // fire an event every time the window resizes to see if we need to unstick
+       window.onresize = function(){
+           // set the available fullsize width
+           var width = window.screen.availWidth
+           // if it's less than a third, unstick
+           if( $(window).width() < (width/2) ){
+               $('#sticker').unstick();
+           } else if($(window).width() > (width/2)){
+               $("#sticker").sticky({ topSpacing: 50, bottomSpacing: 1175 });
+           }
+       }
     });</script>
 </body>
 </html>
